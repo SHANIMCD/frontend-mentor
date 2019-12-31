@@ -1,75 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 15px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  <h1>Our Pricing</h1>
-  <div class="toggle-container">
-    <h3 class="toggle">Annually</h3>
-    
-    <label class="switch">
-      <input type="checkbox" checked>
-      <span class="slider round"></span>
-    </label>
+<body class="bkground">
 
-
-    <h3 class="toggle">Monthly</h3>
-  </div>
-  
-
+  <!-- section containing all three price plans -->
   <section class="options">
-    <div class="option-container">
-      <h2>Basic</h2>
-      <p>&dollar;19.99</p>
-      <p>&dollar;199.99</p>
-      <p>500 GB Storage</p>
-      <p>2 Users Allowed</p>
-      <p>Send up to 3 GB</p>
-      <p>Learn More</p>
+
+    <!-- Pricing section & Switch button -->
+    <div class="pricing">
+      <h1>Our Pricing</h1>
+      <div class="toggle-container">
+        <h3 class="toggle">Annually</h3>
+
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <h3 class="toggle">Monthly</h3>
+      </div>
+    </div>
+  <!--  -->
+
+    <div class="containers">
+      <div class="option-container">
+        <div class="vertically-center">
+          <h2>Basic</h2>
+          <p class="monthly">&dollar;19.99</p>
+          <p class="annually">&dollar;199.99</p>
+          <p>500 GB Storage</p>
+          <p>2 Users Allowed</p>
+          <p>Send up to 3 GB</p>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
+  
+  
+      <div class="professional-container">
+        <div class="vertically-center">
+          <h2>Professional</h2>
+          <p class="monthly">&dollar;24.99</p>
+          <p class="annually">&dollar;249.99</p>
+          <p>1 TB Storage</p>
+          <p>5 Users Allowed</p>
+          <p>Send up to 10 GB</p>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
+  
+      <div class="option-container">
+        <div class="vertically-center">
+          <h2>Master</h2>
+          <p class="monthly">&dollar;39.99</p>
+          <p class="annually">&dollar;399.99</p>
+          <p>2 TB Storage</p>
+          <p>10 Users Allowed</p>
+          <p>Send up to 20 GB</p>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
     </div>
     
-  <div id="professional-container">
-    <h2>Professional</h2>
-    <p>&dollar;24.99</p>
-    <p>&dollar;249.99</p>
-    <p>1 TB Storage</p>
-    <p>5 Users Allowed</p>
-    <p>Send up to 10 GB</p>
-    <p>Learn More</p>
-  
-  </div>
-  
-  <div class="option-container">
-    <h2>Master</h2>
-    <p>&dollar;39.99</p>
-    <p>&dollar;399.99</p>
-    <p>2 TB Storage</p>
-    <p>10 Users Allowed</p>
-    <p>Send up to 20 GB</p>
-    <p>Learn More</p>
-  </div>
+
 
   </section>
-  
 
-  
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Shani McDonald</a>.
   </div>
+
+
 </body>
+
 </html>

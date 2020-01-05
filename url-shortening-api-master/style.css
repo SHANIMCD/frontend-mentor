@@ -1,6 +1,43 @@
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 3%;
+}
 
+button {
+  border-radius: 10px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  border: none;
+  width: inherit;
+  align-self: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left img {
+  height: 30px;
+  align-self: center;
+}
+
+.nav-left p {
+  margin: 2%;
+}
+
+.nav-right p {
+  padding-right: 10%;
+}
+
+.nav-right {
+  display: flex;
 }
 
 /* Header section */
@@ -16,17 +53,57 @@ h1 {
 
 /* search section  */
 .search-section {
+  padding-top: 1%;
   display: flex;
   justify-content: center;
   background-color: teal;
   height: 70px;
+  /* align-content: center; */
+}
+
+.search-section button {
+  margin-left: 1%;
+  align-self: center;
 }
 
 input {
   width: 500px;
   height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 15px;
 }
 
+/* Advanced Statistics section */
+
+.advanced-statistics {
+  height: 100vh;
+  background-color: rgb(219, 219, 219);
+}
+
+.statistics-header {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.boxes1 {
+  display: flex;
+  justify-content: center;
+}
+
+.statistic-box {
+  width: 300px;
+  margin: 3%;
+}
+
+
+
+/* boost your links today  */
+.calltoaction {
+  height: 30vh;
+  text-align: center;
+  background-color: teal;
+}
 
 footer {
 
@@ -35,3 +112,4 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+

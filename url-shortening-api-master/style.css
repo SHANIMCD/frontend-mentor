@@ -7,6 +7,10 @@ body {
   margin: 5%;
 }
 
+p {
+  color: hsl(0, 0%, 75%);
+}
+
 button {
   border-radius: 10px;
   background-color: hsl(180, 66%, 49%);
@@ -107,25 +111,79 @@ input {
   margin-top: -50px;
   padding-top: 120px;
   height: 100vh;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(236, 236, 236);
 }
 
 .statistics-header {
   text-align: center;
   margin-bottom: 10%;
+  width: 40vw;
+  margin: 0 auto;
 }
+
+.statistics-header p {
+  font-size: 18px;
+  /* width: 50vw; */
+  
+}
+
+.statistics-header h2 {
+  font-size: 40px;
+}
+
 
 .boxes1 {
   display: flex;
   justify-content: center;
+  flex-flow: wrap;
 }
 
-.statistic-box {
+/* .statistic-box {
+  border-radius: 50px;
+} */
+
+#box-2 {
+margin-top: 40px;  
+/* align-self: flex-start|flex-end|center|baseline|stretch; */
+}
+
+#box-3 {
+  margin-top: 85px;
+}
+
+.box-icon {
+  background-color: hsl(255, 11%, 22%);
+  padding: 20px;
+  padding-bottom: 3.5%;
+  border-radius: 50%;
+  width: fit-content;
+  align-items: center;
+  margin-left: 45px; 
+}
+
+.icon-styling {
+  height: 50px;
+}
+
+.box-info {
+  position: relative;
+  z-index: -1;
   width: 300px;
-  margin: 3%;
+  margin: -42px 45px 10px 25px;
+  background-color: white;
+  padding: 15% 3% 5% 5%;
+  border-radius: 10px;
 }
 
-
+.line-detail {
+  height: 8px;
+  background-color: hsl(180, 66%, 49%);
+  width: 55vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+  top: 210px
+}
 
 /* boost your links today  */
 .calltoaction {
@@ -133,6 +191,15 @@ input {
   text-align: center;
   background: radial-gradient(circle, rgba(94,73,125,1) 27%, rgba(59,48,84,1) 62%);
 
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 footer {

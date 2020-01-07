@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 5%;
+  margin: 3%;
 }
 
 p {
@@ -96,8 +96,8 @@ h1 {
 }
 
 input {
-  width: 600px;
-  height: 40px;
+  width: 60vw;
+  height: 60%;
   border-radius: 10px;
   font-size: 18px;
   padding-left: 15px;
@@ -195,6 +195,25 @@ margin-top: 40px;
 
 }
 
+h5 {
+  font-size: 30px;
+  color: white;
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+  padding-top: 6%;
+ 
+}
+
+.favicons {
+  padding-top: 2%;
+  width: 200px;
+}
+
+.favicons img {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -205,10 +224,20 @@ margin-top: 40px;
 }
 
 footer {
-
+  height: 32vh;
   background-color: #231f27;
   color: white;
   display: flex;
   justify-content: space-evenly;
+}
+
+footer h5 {
+  flex-basis: 25%;
+  align-content: flex-start;
+}
+
+footer p {
+  /* line-height: 0.8em; */
+  font-size: 12px;
 }
 

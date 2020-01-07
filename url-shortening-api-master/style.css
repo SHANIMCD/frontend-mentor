@@ -110,8 +110,10 @@ input {
   position: relative;
   margin-top: -50px;
   padding-top: 120px;
-  height: 100vh;
+  padding-bottom: 6%;
+  height: fit-content;  
   background-color: rgb(236, 236, 236);
+
 }
 
 .statistics-header {

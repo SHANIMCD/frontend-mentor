@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/style.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,800&display=swap" rel="stylesheet">
+  <script src="/script.js"></script>
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -50,9 +51,10 @@
 
   <section class="search-section">
     <div class="search-bar">
-      <input placeholder="Shorten a link here...">
+      <input type="text" placeholder="Shorten a link here...">
+      <p id="error"></p>
     </div>
-    <button>
+    <button id="shorten">
       Shorten It!
     </button>
   </section>

@@ -57,6 +57,9 @@ button:hover {
 }
 
 header {
+  /* background-image: url('/images/bg-pattern-intro-right-desktop.svg'); */
+  background-repeat: no-repeat;
+  background-position: right;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -64,6 +67,12 @@ header {
   color: white;
   background-color:hsl(256, 26%, 20%);
 }
+
+/* .background-pattern-right {
+  position: absolute;
+  left: 450px;
+  top: -700px
+} */
 
 hr {
  width: 100px;
@@ -176,7 +185,14 @@ footer {
   flex-direction: column;
   margin: 5% 0% 0 0;
   background-color: rgb(238, 238, 238);
+  background-image: url('/images/bg-pattern-footer-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 500px 150px;
 }
+/* 
+footer > img {
+  
+} */
 
 .logo-social-container {
   display: flex;

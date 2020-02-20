@@ -1,9 +1,31 @@
 
 
 body {
+  margin: 0;
   display: flex;
   flex-direction: column;
   font-family: 'DM Serif Display', serif;
+  /* background-image: url('/images/bg-pattern-intro-left-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  top: 200px;
+  z-index: 10; */
+}
+
+.pattern-left {
+  position: relative;
+  width: 200px;
+  top: -200px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.pattern-right {
+  position: relative;
+  float: right;
+  top: -720px;
+  left: 450px;
 }
 
 nav {
@@ -116,12 +138,14 @@ h1 {
 
 
 .we-different-container {
-  padding-top: 30vh;
+  margin-top: -200px;
   display: flex;
   flex-direction: column;
   height: 70vh;
   margin-left: 12%;
   margin-right: 10%;
+  justify-content: flex-start;
+  
 }
 
 .we-different-container > hr {  
@@ -165,6 +189,9 @@ h1 {
   justify-content: space-around;
   margin: 5px 10%;
   background-color: hsl(256, 26%, 20%);
+  background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: right;
   color: white;
 }
 
@@ -237,3 +264,78 @@ footer > img {
 .footer-section > p:hover {
 text-decoration: underline;
 }
+
+
+@media screen and (max-width: 992px) {
+
+  body {
+    display: flex;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 25px;
+    /* text-align: center; */
+  }
+
+  header > h1, p {
+   text-align: center;
+  }
+
+  .image-container {
+    display: none;
+    
+  }
+  .pattern-left {
+    display: none;
+  }
+  .pattern-right {
+    display: none;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+  }
+
+  .we-different-container {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .different-option-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* 
+  .we-different-container {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+  
+    
+  }
+
+  .different-option-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container {
+    display: none;
+    
+  }
+
+  .find-out-container {
+    margin-top: 250px;
+  }  */
+ }

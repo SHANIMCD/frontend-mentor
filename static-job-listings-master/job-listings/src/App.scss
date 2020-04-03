@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  
+
+  .header {
+    background-color: hsl(180, 29%, 50%);
+    height: 100px;
+  }
+
+  .job-space {
+    background-color: hsl(180, 52%, 96%);
+    
+  }
+
+  .display-job-card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    box-shadow: 2px 2px 10px hsl(180, 29%, 50%);
+    
+    justify-content: space-between;
+    margin: 10px 100px 20px 100px;
+
+    .job-display-image {
+      img {
+        max-width: 70px;
+        padding-right: 20px;
+       
+      }
+    }
+  
+    .card-left {
+
+    display: flex;
+    // justify-content: space-between;
+
+      .card-middle {
+        display: flex;
+        flex-direction: column;
+        
+        
+
+
+
+        .job-display-body { 
+        display: flex;
+        flex-direction: column;
+          .title {
+            color: hsl(180, 29%, 50%);
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+        }
+
+        
+      
+        .time-location {
+        margin-top: 5px;
+        display: flex;
+        color: gray;
+        font-weight: bold;
+
+        p {
+          font-size: 12px;
+          margin-top: 2px;
+        }
+
+        }
+      
+      }
+  }
+
+  .tools-id {
+    display: flex;
+    
+  
+    p {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      color: hsl(180, 29%, 50%);
+      font-weight: bold;
+      font-size: 10px;
+      background-color: hsl(180, 52%, 96%);
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+
+}
+}
+
+
+ 
+ 
+
+
+

@@ -17,6 +17,7 @@ class App extends React.Component {
       filters: []
 
     }
+    // this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount() {
@@ -26,42 +27,48 @@ class App extends React.Component {
   }
 
 
-  filteredJobs() {
-    // const data = this.state
-    // const re = new RegExp('F')
-    // const filtered = this.state.data.filter(dat => {
-    //   return re.test(dat.role)
-    // })
-    // console.log(filtered)
+  // filteredJobs() {
+  //   // const data = this.state
+  //   // const re = new RegExp('F')
+  //   // const filtered = this.state.data.filter(dat => {
+  //   //   return re.test(dat.role)
+  //   // })
+  //   // console.log(filtered)
 
-    let { role, level, tools, languages } = this.state.data
-    let { filters } = this.state
+  //   let { role, level, tools, languages } = this.state.data
+  //   let { filters } = this.state
 
-    if (filters.length === 0) {
-      return true
-    }
+  //   if (filters.length === 0) {
+  //     return true
+  //   }
 
-    const tags = [role, level]
+  //   const tags = [role, level]
 
-    if (tools) {
-      tags.push(...tools)
-    }
+  //   if (tools) {
+  //     tags.push(...tools)
+  //   }
 
-    if (languages) {
-      tags.push(...languages)
-    }
+  //   if (languages) {
+  //     tags.push(...languages)
+  //   }
 
-    return tags.some(tag => filters.includes(tag))
+  //   return tags.some(tag => filters.includes(tag))
 
-  }
+  // }
 
-  handleTagClick(tag) {
-    setFilters([...filters, tag])
-  }
+  // handleTagClick(tag) {
+  //   setFilters([...filters, tag])
+  // }
+
+  // filterJobs() {
+  //  const filteredRoles = this.state.data.filter(dat => dat.role === 'Backend')
+  //  console.log(filteredRoles) 
+  // }
+
 
 
   render() {
-    console.log(this.filteredJobs())
+    // console.log(this.handleClick())
     console.log(this.state.data)
     if (!this.state.data) return null
 
@@ -114,16 +121,16 @@ class App extends React.Component {
                       </div>
                     </div>
 
-                    <div className="langtools-id" key={id}>
-                      <p onClick={this.handleTagClick()} id="job-role">{_dat.role}</p>
+                    <div name='filtered' className="langtools-id" key={id}>
+                      <p onClick={this.filterJobs()} id="job-role">{_dat.role}</p>
                       <p id="job-level">{_dat.level}</p>
 
                       {_dat.languages ? _dat.languages.map((lang) =>
-                        <p onClick={this.handleTagClick()}>{lang}</p>
+                        <p>{lang}</p>
                       ) : ''}
 
                       {_dat.tools ? _dat.tools.map((tool) =>
-                        <p onClick={this.handleTagClick()} >{tool}</p>
+                        <p >{tool}</p>
                       ) : ''}
                     </div>
                   </div>
